@@ -1,0 +1,8 @@
+en:
+  SiteTreeLabel:
+    COLOR: Color
+    ERROR_TITLE_EXISTS: 'A label "{title}" exists already. Consider linking the existing one.'
+    LABELS: Label
+    PLURALNAME: 'Site Tree Labels'
+    SINGULARNAME: 'Site Tree Label'
+    TITLE: Title
