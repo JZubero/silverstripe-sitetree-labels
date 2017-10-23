@@ -18,5 +18,18 @@ Do not forget to `dev/build?flush=all`.
 - Integration for Menu Manager Module
 - Report for looking up pages linked to a certain label
 
+## Customization
+If you want to change the label look you can apply your custom style definitions to the class `.sitetree-label`. Default style:
+
+```css
+.sitetree-label {
+    border-radius: 3px;
+    font-size: 0.75rem;
+    padding: 2px 4px;
+    color: #fff;
+    text-shadow: none;
+}
+```
+
 ## Maintainer
 - JZubero <js@lvl51.de>

@@ -3,7 +3,7 @@
         <span class="text">$TreeTitle</span>
         <% if $SiteTreeLabels %>
             <% loop $SiteTreeLabels %>
-                <span class="sitetree-label" style="border-radius: 3px; font-size: 0.75rem; padding: 2px 4px; color: #fff; text-shadow: none; background-color: $Color">$Title</span>
+                <span class="sitetree-label" style="background-color: $Color">$Title</span>
             <% end_loop %>
         <% end_if %>
     </a>
