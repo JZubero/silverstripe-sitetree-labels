@@ -4,5 +4,6 @@ de:
     ERROR_TITLE_EXISTS: 'Ein Label "{title}" existiert bereits. Dieses kann bei Bedarf verlinkt werden.'
     LABELS: Labels
     PLURALNAME: 'Site Tree Labels'
+    REPORT_TITLE: 'Seiten mit zugewiesenen Labels'
     SINGULARNAME: 'Site Tree Label'
     TITLE: Titel

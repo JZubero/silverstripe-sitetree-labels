@@ -8,8 +8,15 @@ Besides your custom labels the module will look for the [Menu Manager](https://g
 ## Install
 `composer require jzubero/silverstripe-sitetree-labels`
 
+Do not forget to `dev/build?flush=all`.
+
 ## Dependencies
 - ryanpotter/silverstripe-color-field:^0.1.0
+
+## Features
+- GridField in Settings for adding and linking labels
+- Integration for Menu Manager Module
+- Report for looking up pages linked to a certain label
 
 ## Maintainer
 - JZubero <js@lvl51.de>
