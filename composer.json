@@ -1,7 +1,7 @@
 {
     "name": "jzubero/silverstripe-sitetree-labels",
-    "version": "0.1.0",
-    "time": "2017-10-15",
+    "version": "0.1.1",
+    "time": "2017-10-23",
     "description": "Label your Page items for better orientation in large SiteTrees.",
     "type": "silverstripe-module",
     "license": "MIT",

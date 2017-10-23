@@ -3,14 +3,14 @@ All notable changes to this project will be documented in this file. Thanks to O
 
 This project adheres to [Semantic Versioning](http://semver.org/).
 
-## [0.1.1]
+## [0.1.1] - 2017-10-23
 ### Added
 - Report for looking up pages linked to a certain label
 
 ### Changed
 - Label styles in own CSS file
 
-## [0.1.0]
+## [0.1.0] - 2017-10-15
 ### Added
 - GridField in Settings for adding and linking labels
 - Integration for Menu Manager Module
