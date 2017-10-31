@@ -13,6 +13,7 @@
     ],
     "minimum-stability": "dev",
     "require": {
+        "silverstripe/cms": "^3.2",
         "ryanpotter/silverstripe-color-field": "^0.1.0"
     }
 }
