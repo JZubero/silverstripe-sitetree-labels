@@ -11,6 +11,7 @@ Besides your custom labels the module will look for the [Menu Manager](https://g
 Do not forget to `dev/build?flush=all`.
 
 ## Dependencies
+- silverstripe/cms:^3.2
 - ryanpotter/silverstripe-color-field:^0.1.0
 
 ## Features
