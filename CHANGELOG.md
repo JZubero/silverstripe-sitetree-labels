@@ -7,6 +7,9 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ### Added
 - Specified `installer-name` in composer file
 
+### Changed
+- Methods for checking if label types are available and activated
+
 ## [0.1.1] - 2017-10-23
 ### Added
 - Report for looking up pages linked to a certain label

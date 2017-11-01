@@ -2,6 +2,8 @@
 
 class SiteTreeLabel extends DataObject {
 
+    private static $show_menu_labels = true;
+
     private static $db = [
         'Title' => 'Varchar',
         'Color' => 'Varchar(7)'

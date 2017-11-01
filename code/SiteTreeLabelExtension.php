@@ -15,26 +15,48 @@ class SiteTreeLabelExtension extends DataExtension {
             GridFieldConfig_RelationEditor::create()));
     }
 
+    /**
+     * Fetches all assigned site tree labels.
+     *
+     * @return ArrayList
+     */
     public function SiteTreeLabels() {
-        if (Config::inst()->get('SiteTree', 'show_labels') == false) return null;
+        $labels = ArrayList::create();
 
-        $labels = [];
+        // Return empty ArrayList if labels are deactivated
+        if (!$this->doShowLabels())
+            return $labels;
 
-        // Check for HeyDay's Menu Manager Module
-        if (class_exists('MenuItem') &&
-            class_exists('MenuSet'))
+        // Add Menu Labels if available and activated
+        if ($this->doShowMenuLabels())
             foreach (MenuItem::get()->filter('PageID', $this->owner->ID) as $menuItem) {
-                $labels[] = [
+                $labels->add([
                     'Title' => $menuItem->MenuSet()->Name,
                     'Color' => Config::inst()->get('SiteTree', 'label_color')
-                ];
+                ]);
             }
 
         // Add page's labels
-        $labels = array_merge($labels, $this->owner->Labels()->toArray());
+        $labels->merge($this->owner->Labels()->toArray());
 
-        $this->owner->extend('updateSiteTreeLabels', $labels);
+        return $labels;
+    }
 
-        return count($labels) === 0 ? null : ArrayList::create($labels);
+    /**
+     * Checks if labels are activated.
+     *
+     * @return bool
+     */
+    private function doShowLabels() {
+        return Config::inst()->get('SiteTree', 'show_labels') === true;
+    }
+
+    /**
+     * Checks for HeyDay's Menu Manager Module and the flag for activating it.
+     *
+     * @return bool
+     */
+    private function doShowMenuLabels() {
+        return class_exists('MenuItem') && class_exists('MenuSet') && Config::inst()->get('SiteTreeLabel', 'show_menu_labels');
     }
 }
