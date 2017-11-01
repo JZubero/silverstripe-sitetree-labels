@@ -3,6 +3,10 @@ All notable changes to this project will be documented in this file. Thanks to O
 
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [Unreleased]
+### Added
+- Specified `installer-name` in composer file
+
 ## [0.1.1] - 2017-10-23
 ### Added
 - Report for looking up pages linked to a certain label
