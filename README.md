@@ -43,5 +43,9 @@ If you want to change the label look you can apply your custom style definitions
 }
 ```
 
+## Thanks... :clap:
+- ...**wmk** for contributing to this module.
+- ...**Andreas Spannbauer, Eric Hes** and **Zauberfisch** for discussing the module idea with me at StripeConEU 2017.
+
 ## Maintainer
 - JZubero <js@lvl51.de>
