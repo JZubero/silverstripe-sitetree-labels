@@ -3,7 +3,7 @@ All notable changes to this project will be documented in this file. Thanks to O
 
 This project adheres to [Semantic Versioning](http://semver.org/).
 
-## [Unreleased]
+## [0.1.2] - 2017-11-01
 ### Added
 - Specified `installer-name` in composer file
 
