@@ -4,6 +4,8 @@ class SiteTreeLabel extends DataObject {
 
     private static $show_menu_labels = true;
 
+    private static $label_color = '#426ef4';
+
     private static $db = [
         'Title' => 'Varchar',
         'Color' => 'Varchar(7)'
@@ -15,7 +17,7 @@ class SiteTreeLabel extends DataObject {
 
     public function getCMSFields() {
         $f = parent::getCMSFields();
-        $f->addFieldToTab('Root.Main', ColorField::create('Color'));
+        $f->addFieldToTab('Root.Main', ColorField::create('Color', $this->fieldLabel('Color'), $this->Color ?: $this->getDefaultColor()));
 
         return $f;
     }
@@ -37,5 +39,9 @@ class SiteTreeLabel extends DataObject {
         $labels['Color'] = _t('SiteTreeLabel.COLOR', 'Color');
 
         return $labels;
+    }
+
+    public function getDefaultColor() {
+        return Config::inst()->get(SiteTreeLabel::class, 'label_color');
     }
 }

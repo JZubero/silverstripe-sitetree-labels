@@ -15,6 +15,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Report for looking up pages linked to a certain label
 
 ### Changed
+- Improved and documented module config
 - Label styles in own CSS file
 
 ## [0.1.0] - 2017-10-15

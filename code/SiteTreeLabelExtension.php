@@ -4,8 +4,6 @@ class SiteTreeLabelExtension extends DataExtension {
 
     private static $show_labels = true;
 
-    private static $label_color = '#426ef4';
-
     private static $many_many = [
         'Labels' => SiteTreeLabel::class
     ];
@@ -32,7 +30,7 @@ class SiteTreeLabelExtension extends DataExtension {
             foreach (MenuItem::get()->filter('PageID', $this->owner->ID) as $menuItem) {
                 $labels->add([
                     'Title' => $menuItem->MenuSet()->Name,
-                    'Color' => Config::inst()->get('SiteTree', 'label_color')
+                    'Color' => singleton('SiteTreeLabel')->getDefaultColor()
                 ]);
             }
 
