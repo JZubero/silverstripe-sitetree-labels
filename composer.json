@@ -13,8 +13,12 @@
     ],
     "minimum-stability": "dev",
     "require": {
+        "php": ">= 5.4.0, <7.2",
         "silverstripe/cms": "^3.2",
         "ryanpotter/silverstripe-color-field": "^0.1.0"
+    },
+    "require-dev": {
+        "phpunit/PHPUnit": "~3.7"
     },
     "extra": {
         "installer-name": "sitetree-labels"
