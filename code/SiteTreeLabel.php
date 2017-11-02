@@ -22,6 +22,9 @@ class SiteTreeLabel extends DataObject {
         return $f;
     }
 
+    /**
+     * @return ValidationResult
+     */
     protected function validate() {
         $validator = parent::validate();
 

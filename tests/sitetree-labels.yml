@@ -1,0 +1,17 @@
+SiteTreeLabel:
+  label-1:
+    Title: 'Label 1'
+    Color: '#000000'
+  label-2:
+    Title: 'Label 2'
+    Color: '#ffffff'
+
+Page:
+  no-labels:
+    Title: 'Page without labels'
+  one-label:
+    Title: 'Page with Label 1'
+    Labels: =>SiteTreeLabel.label-1
+  two-labels:
+    Title: 'Page with Label 1 and 2'
+    Labels: =>SiteTreeLabel.label-1,=>SiteTreeLabel.label-2
