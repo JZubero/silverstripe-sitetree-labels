@@ -1,4 +1,5 @@
 # SiteTree Labeling
+[![Build Status](https://travis-ci.org/JZubero/silverstripe-sitetree-labels.svg?branch=master)](https://travis-ci.org/JZubero/silverstripe-sitetree-labels)
 ![Example SiteTree Label View](docs/demo-shot1.jpg)
 
 Help to enrich your big and messy SiteTrees with some extra top-level information using labels.
