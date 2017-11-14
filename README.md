@@ -44,6 +44,18 @@ If you want to change the label look you can apply your custom style definitions
 }
 ```
 
+## Extending
+You can add extra labels via code by using the `updateSiteTreeLabels` hook method.
+
+```php
+public function updateSiteTreeLabels(ArrayList &$labels) {
+    $labels->add([
+        'Title': 'My Custom Label',
+        'Color': '#ed135a'
+    ]);
+}
+```
+
 ## Thanks... :clap:
 - ...**wmk** for contributing to this module.
 - ...**Andreas Spannbauer, Eric Hes** and **Zauberfisch** for discussing the module idea with me at StripeConEU 2017.

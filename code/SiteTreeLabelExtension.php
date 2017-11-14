@@ -34,6 +34,9 @@ class SiteTreeLabelExtension extends DataExtension {
                 ]);
             }
 
+        // Add labels with call be reference hook
+        $this->owner->extend('updateSiteTreeLabels', $labels);
+
         // Add page's labels
         $labels->merge($this->owner->Labels()->toArray());
 
