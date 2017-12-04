@@ -3,6 +3,10 @@ All notable changes to this project will be documented in this file. Thanks to O
 
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [1.1.1] - 2017-12-04
+### Fixed
+- Nested LIs not showing correctly in CMS
+
 ## [1.1.0] - 2017-11-14
 ### Added
 - Extension hook for adding labels programmatically

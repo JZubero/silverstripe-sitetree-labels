@@ -59,6 +59,7 @@ public function updateSiteTreeLabels(ArrayList &$labels) {
 ## Thanks... :clap:
 - ...**wmk** for contributing to this module.
 - ...**Andreas Spannbauer, Eric Hes** and **Zauberfisch** for discussing the module idea with me at StripeConEU 2017.
+- ...**blueskies79** for her [bug tracing](https://github.com/JZubero/silverstripe-sitetree-labels/issues/5) skills.
 
 ## Maintainer
 - JZubero <js@lvl51.de>

@@ -7,4 +7,3 @@
             <% end_loop %>
         <% end_if %>
     </a>
-</li>
